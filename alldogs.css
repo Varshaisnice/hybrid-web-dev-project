@@ -1,0 +1,70 @@
+.ic {
+    width: 100%;         /* Or set a specific width */
+}
+
+.ic img {
+    display: block;      /* Make the image a block element */
+    margin: 10px auto;     /* Center the image */
+    max-width: 100%;     /* Ensures the image is responsive */
+    height: auto;   
+    border-radius: 10px;     /* Maintains aspect ratio */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-column {
+    margin: 10px;
+    max-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .footer-column {
+        max-width: 100%;
+        text-align: center;
+    }
+}

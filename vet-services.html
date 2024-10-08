@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vet Services</title>
+    <link rel="stylesheet" href="mainstyle2.css">
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainstyle2.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(https://thumbs.dreamstime.com/b/paw-fish-bone-pattern-cute-color-design-modern-print-vector-illustration-237550501.jpg);
+            font-family: 'Poppins', sans-serif;
+            background-color: #c7e6e0;
+            color: #2c3e50;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-theme {
+            background-color: #264653;
+            color: #e9ecef;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 20vh;
+            padding: 0 2rem;
+        }
+
+        .left-section h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: #023e8a;
+        }
+
+        .right-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin: 0 10px;
+            color: #2c3e50;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #48cae4;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: #023e8a;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #00b4d8;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        /* Service containers */
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-box {
+            width: 25%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #a8dadc;
+            transition: background-color 0.3s;
+        }
+
+        .service-box:hover {
+            background-color: #457b9d;
+        }
+
+        .service-box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #1d3557;
+        }
+
+        .service-box p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .grooming-description {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #e3f2fd;
+            margin: 20px 0;
+        }
+
+        .grooming-description h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #1d3557;
+        }
+
+        .grooming-description p {
+            font-size: 18px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .divider {
+            border: none;
+            height: 1px;
+            background-color: #000000;
+            margin: 10px 0;
+        }
+
+        .price-range {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1d3557;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="main2.html"><img class="a" src="Purr & Wag1logo.png" alt="website logo" width="300px" height="100px"></a>
+      
+        <div class="right"> 
+           <button class="b"><a href="contact-us.html"><img src="https://cdn-icons-png.flaticon.com/512/60/60720.png" alt="" width="30px" height="30px"></a></button> 
+           <a href="login_page[1].html"><button class="c"><img src="profilepiclogo.png" alt="" width="30px" height="30px"></button></a>
+        </div>
+    </header>
+
+    <nav class="d">
+       <a href="about.html"><button class="e">About</button></a> 
+       <a href="services.html"> <button class="e">Services</button></a>
+       <a href="dogbreeds.html"><button class="e">Dogs</button></a>   
+       <a href="vet-services.html"><button class="e">Contact Vet</button></a>
+     
+       <a href="grooming-services-new.html"><button class="e">Grooming Services</button></a> 
+    </nav>
+
+    <div class="container">
+        <div class="left-section">
+            <h1>VET SERVICES</h1>
+        </div>
+        
+        <div class="right-section">
+            <!--dog-->
+            <i class="fas fa-dog icon"></i>
+
+            <!--toggleSwitch-->
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider round"></span>
+            </label>
+
+            <!--cat-->
+            <i class="fas fa-cat icon"></i>
+        </div>
+    </div>
+
+    <div class="grooming-description">
+        <h2>Why Choose Our Vet Services?</h2>
+        <p>Pur and Wag offers comprehensive veterinary services for both dogs and cats. Our professional veterinarians provide exceptional care ranging from routine check-ups and vaccinations to emergency treatments and surgeries. Keep your pets in their best health with our dedicated and compassionate approach!</p>
+    </div>
+
+    <div class="services-container">
+        <!-- Dog Vet Services -->
+        <div class="service-box dog-service">
+            <h2>General Check-up</h2>
+            <p>Physical Examination <br> Weight and Diet Check <br> Vaccination Updates <br> Health Assessment</p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹599</p>
+        </div>
+
+        <div class="service-box dog-service">
+            <h2>Surgery and Emergency Care</h2>
+            <p> Minor and Major Surgeries <br> Wound Treatment <br> Post-operative Care <br> Critical Care Services</p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹2499</p>
+        </div>
+
+        <div class="service-box dog-service">
+            <h2>Dental Care</h2>
+            <p>Teeth Cleaning <br> Dental Check-ups <br> Oral Surgery <br> Preventive Dental Care</p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹899</p>
+        </div>
+
+        <!-- Cat Vet Services (initially hidden) -->
+        <div class="service-box cat-service hidden">
+            <h2>Wellness Exam</h2>
+            <p>Routine Health Check <br> Vaccination Schedule <br> Diet and Nutrition Advice <br> Parasite Control</p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹699</p>
+        </div>
+
+        <div class="service-box cat-service hidden">
+            <h2>Spay and Neuter</h2>
+            <p> Safe Spaying and Neutering <br> Post-surgery Care <br> Health and Behavior Benefits <br> Affordable Pricing</p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹1799</p>
+        </div>
+
+        <div class="service-box cat-service hidden">
+            <h2>Senior Cat Care</h2>
+            <p>Geriatric Health Check <br> Pain Management <br> Special Diet Plans <br> Age-related Conditions</p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹999</p>
+        </div>
+    </div>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p>Instagram: <a href="https://instagram.com/your_instagram" target="_blank">@pur_and_wag</a></p>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Phone: +123-456-7890</p>
+                <p>Email: info@purandwag.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Location</h3>
+                <p>Ramaiah institute of Technology</p>
+            </div>
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                <p>Sat-Sun: 10:00 AM - 4:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pur and Wag. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .footer-column {
+            margin: 10px;
+            max-width: 200px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+
+        .footer-column p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .footer-column a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-column {
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+        .gmap-container {
+text-align: center;
+margin: 20px 0;
+}
+</style>
+</body>
+</html>

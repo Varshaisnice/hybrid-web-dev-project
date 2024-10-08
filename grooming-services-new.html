@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainstyle2.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+    background-image:  linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(https://thumbs.dreamstime.com/b/paw-fish-bone-pattern-cute-color-design-modern-print-vector-illustration-237550501.jpg);
+  
+}
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #dae283;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-theme {
+            background-color: #9c51ec;
+            color: #000000ad;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 20vh;
+            padding: 0 2rem;
+        }
+
+        .left-section h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: #2c3e50;
+        }
+
+        .right-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin: 0 10px;
+            color: #333;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #00d0ff;
+            transition: 0.4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: #000000;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #edff25;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+            transition: 0.4s;
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        /* Service containers */
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-box {
+            width: 25%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0,);
+            background-color: #61d59567;
+            transition: background-color 0.3s;
+        }
+
+        .service-box:hover {
+            background-color: #4623de49;
+        }
+
+        .service-box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service-box p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .hidden {
+            display: none;
+        }
+        .grooming-description {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f3f3f3;
+            margin: 20px 0;
+        }
+
+        .grooming-description h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .grooming-description p {
+            font-size: 18px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .divider {
+    border: none;
+    height: 1px;
+    background-color: #000000;
+    margin: 10px 0;
+}
+
+.price-range {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="main2.html"><img class="a" src="Purr & Wag1logo.png" alt="website logo" width="300px" height="100px" onclick="main.html"></a>
+      
+        <div class="right"> 
+            <button class="b"><a href="contact-us.html"><img src="https://cdn-icons-png.flaticon.com/512/60/60720.png" alt="" width="30px" height="30px"></a></button> 
+              <a href="login_page[1].html"><button class="c"><img src="profilepiclogo.png" alt=""width="30px" height="30px" ></button></a>
+           </div>
+ 
+        </header>
+        <nav class="d">
+           <a href="about.html"><button class="e">About</button></a> 
+           <a href="services.html"> <button class="e">Services</button></a>
+           <a href="dogbreeds.html"> <button class="e">Dogs</button></a>
+           
+          <a href="vet-services.html"> <button class="e">Contact Vet</button></a> 
+          <a href="grooming-services-new.html">  <button class="e">Grooming Services</button></a>
+    </nav>
+    
+ 
+     </header>
+    <div class="container">
+        <div class="left-section">
+            <h1>GROOMING SERVICES</h1>
+        </div>
+        
+        <div class="right-section">
+            <!--dog-->
+            <i class="fas fa-dog icon"></i>
+
+            <!--toggleSwitch-->
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider round"></span>
+            </label>
+
+            <!--cat-->
+            <i class="fas fa-cat icon"></i>
+        </div>
+    </div>
+    <div class="grooming-description">
+        <h2>Why Choose Our Grooming Services?</h2>
+        <p>Pur and Wag offers versatile grooming services tailored for both dogs and cats. Our expert groomers ensure your pets look and feel their best, with services ranging from baths and haircuts to nail trims and ear cleaning. Regular grooming helps maintain healthy coats, reduces shedding, and promotes overall well-being. Give your pet the care they deserve with our gentle, professional touch!</p>
+    </div>
+    <!-- Service containers -->
+    <div class="services-container">
+        <!-- Dog services -->
+        <div class="service-box dog-service">
+            <h2>Full Grooming Package</h2>
+            <p>Bath and blow dry <br> Haircut and trimming <br> Nail Trimming <br> Ear cleaning <br> Teeth brushing</p>
+        <hr class="divider"> 
+        <p class="price-range">Price Range: ₹499</p>
+        </div>
+        <div class="service-box dog-service">
+            <h2>De-Shedding Treatment</h2>
+            <p> Deep Brushing <br> Undercoat Remova <br> Post-Bath Blowout <br> Skin and Coat Conditioning
+                
+            </p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹1499</p>
+        </div>
+        <div class="service-box dog-service">
+            <h2>Paw and pad care</h2>
+            <p>Paw Pad Moisturization <br>Trimming of Paw Hair <br>Nail Grinding <br>Paw Cleaning <br> Tick and flea treatment <br></p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹1699</p>
+        </div>
+
+
+        <!-- Cat services (initially hidden) -->
+        <div class="service-box cat-service hidden">
+            <h2>Full Grooming Package for Cats</h2>
+            <p>Bathing <br> Brush Out <br>Sanitary Trim <br> Ear Cleaning <br> Nail trimming <br></p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹799</p>
+        </div>
+        <div class="service-box cat-service hidden">
+            <h2>Mat Removal and Fur Trimming</h2>
+            <p>Dematting <br> Shaving for Severe Mats <br>Fur Trimming <br>Post-Mat Skin Treatment <br></p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹1899</p>
+        </div>
+
+        <div class="service-box cat-service hidden">
+            <h2>Kitten and Senior cat grooming</h2>
+            <p>Gentle Bathing <br> Soft Brushing <br> Nail Clipping <br> Health Checks <br></p>
+            <hr class="divider"> 
+            <p class="price-range">Price Range: ₹2399</p>
+        </div>
+
+    </div>
+    <div class="gmap-container">
+        <h2>Find Us Here!</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509394!2d144.95373631531523!3d-37.81720997975107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0c9f839d%3A0xf8a1a19e3b0a1e64!2sYour%20Business%20Name!5e0!3m2!1sen!2sau!4v1616161616161!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <body>
+        <!-- Your existing content -->
+    
+        <!-- Footer section -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <p>Instagram: <a href="https://instagram.com/your_instagram" target="_blank">@pur_and_wag</a></p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +123-456-7890</p>
+                    <p>Email: info@purandwag.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Location</h3>
+                    <p>Ramaiah institute of Technology</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Opening Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                    <p>Sat-Sun: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pur and Wag. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+        <style>
+            footer {
+                background-color: #333;
+                color: #fff;
+                padding: 40px 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+    
+            .footer-container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+    
+            .footer-column {
+                margin: 10px;
+                max-width: 200px;
+            }
+    
+            .footer-column h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #ffcc00;
+            }
+    
+            .footer-column p {
+                font-size: 14px;
+                margin: 5px 0;
+            }
+    
+            .footer-column a {
+                color: #ffcc00;
+                text-decoration: none;
+            }
+    
+            .footer-column a:hover {
+                text-decoration: underline;
+            }
+    
+            .footer-bottom {
+                text-align: center;
+                margin-top: 20px;
+                width: 100%;
+                border-top: 1px solid #555;
+                padding-top: 10px;
+            }
+    
+            .footer-bottom p {
+                font-size: 12px;
+            }
+    
+            @media (max-width: 768px) {
+                .footer-column {
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+            .gmap-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gmap-container h2 {
+    margin-bottom: 10px;
+}
+
+        </style>
+    </body>
+    
+    <script>
+        const toggleSwitch = document.getElementById('toggleSwitch');
+        const dogServices = document.querySelectorAll('.dog-service');
+        const catServices = document.querySelectorAll('.cat-service');
+
+        toggleSwitch.addEventListener('change', () => {
+            document.body.classList.toggle('dark-theme');
+
+            // Toggle services display
+            dogServices.forEach(service => {
+                service.classList.toggle('hidden');
+            });
+            catServices.forEach(service => {
+                service.classList.toggle('hidden');
+            });
+        });
+        
+    </script>
+</body>
+
+</html>
